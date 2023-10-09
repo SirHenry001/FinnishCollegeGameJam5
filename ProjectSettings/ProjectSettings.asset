@@ -834,8 +834,8 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: FinnishCollegeGameJam_2023
-  metroPackageVersion: 
+  metroPackageName: FinnishCollegeGameJam2023
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -843,7 +843,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: FinnishCollegeGameJam_2023
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: FinnishCollegeGameJam_2023
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -908,7 +908,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 94659d40-6ad2-4fca-841f-e8e14dc38b21
   framebufferDepthMemorylessMode: 0
