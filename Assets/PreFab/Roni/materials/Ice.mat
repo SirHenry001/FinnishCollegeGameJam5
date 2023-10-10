@@ -65,6 +65,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: a3efffbaf1e5ada469a1f6b58c8f388a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _IceRoughness:
+        m_Texture: {fileID: 2800000, guid: cd7b5849dbcf6994b82f27c7c3dc992c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -113,7 +117,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FresnelStrength: 1
+    - _FresnelStrength: 0.926
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -123,7 +127,8 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RefractStrength: -0.038
+    - _RefractStrength: 0.075
+    - _Roughness: 0.615
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -136,7 +141,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _IceColor: {r: 0.913898, g: 1.3520039, b: 1.4980391, a: 0}
+    - _IceColor: {r: 0.9108815, g: 1.6636871, b: 1.9056603, a: 0}
     - _IceTiling: {r: 1, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
