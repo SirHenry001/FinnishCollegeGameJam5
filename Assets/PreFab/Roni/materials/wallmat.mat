@@ -38,11 +38,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseColor:
-        m_Texture: {fileID: 2800000, guid: c85c9bedeb976eb4cbb38a5d86f81c3b, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8ca83f19f52d4814b82cdd444c4187b1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColor2:
-        m_Texture: {fileID: 2800000, guid: 30bba59d81c2e87498bac7ca4faca7e7, type: 3}
+        m_Texture: {fileID: 2800000, guid: 462d38a8de51b05439a662e5a069ef88, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -74,7 +74,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Mask:
-        m_Texture: {fileID: 2800000, guid: 0b26086f4d5af784c959c44f89cc1cdf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8ee7301e6f598f043aae76db3535e51a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -86,11 +86,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 112ee8393e58a274981d68997dd3ca5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal2:
-        m_Texture: {fileID: 2800000, guid: a3efffbaf1e5ada469a1f6b58c8f388a, type: 3}
+        m_Texture: {fileID: 2800000, guid: a15b4e2dc61977844973d4399f4ecfd1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -102,11 +102,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Roughness:
-        m_Texture: {fileID: 2800000, guid: b16a609ef896ffe47bef7def63ed4202, type: 3}
+        m_Texture: {fileID: 2800000, guid: 01873d4932eedfa4dbfe3e04f72a3edb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Roughness2:
-        m_Texture: {fileID: 2800000, guid: cd7b5849dbcf6994b82f27c7c3dc992c, type: 3}
+        m_Texture: {fileID: 2800000, guid: d788f7d1a2422124a8ddd3a30ee3d32a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
@@ -147,7 +147,7 @@ Material:
     - _GlossyReflections: 0
     - _MaskNormalStrength: 0.09
     - _Metallic: 0
-    - _NormalStrength: 1.64
+    - _NormalStrength: 1.24
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
