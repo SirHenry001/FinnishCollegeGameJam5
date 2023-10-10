@@ -10,12 +10,13 @@ public class Move_Ability : MonoBehaviour
     //MOVEMENT VARIABLES
     public Vector2 mouseVector;
     public float playerSpeed;
+    public float rotationSpeed;
 
     //LOOK VARIABLES
     public float sensitivity = 100f;
     private void Update()
     {
-        //LookMouse();
+        RotatePlayerTowardsCamera();
     }
 
     public void Movement(Vector2 value)
@@ -33,7 +34,14 @@ public class Move_Ability : MonoBehaviour
 
         core.rb.velocity.Normalize();
     }
+    public void RotatePlayerTowardsCamera()
+    {
+        float targetAngle = core.cameraTransform.eulerAngles.y; // give the targetAngle the axis y rotation angle towards cmaeraTransfrom
+        Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0); // internal variable targetrotation which defines the axis where to rotate based on targetAngle
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime); // Rotate the PLayer between two points and certain rotationSpeed variable
+    }
 
+    /*
     public void LookMouse()
     {
         //MOUSE INPUT
@@ -41,12 +49,6 @@ public class Move_Ability : MonoBehaviour
         mouseVector.y += Input.GetAxis("Mouse Y");
         transform.localRotation = Quaternion.Euler(-mouseVector.y, mouseVector.x, 0);
     }
-
-    public void LookGamePad(Vector2 value)
-    {
-        transform.localRotation = Quaternion.Euler(Vector3.right * value.x * 10000f);
-        transform.localRotation = Quaternion.Euler(Vector3.up * value.y * 10000f);
-    }
-
+    */
 
 }

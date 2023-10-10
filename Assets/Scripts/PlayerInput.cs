@@ -25,10 +25,11 @@ public class PlayerInput : MonoBehaviour
     public Shoot_Ability shootAbility;
     public Dash_Ability dashAbility;
 
+
     private void Awake()
     {
         playerController = new PlayerController();
-        mouseInput = playerController.Player.LookPad;
+        mouseInput = playerController.Player.Look;
         moveInput = playerController.Player.Move;
         jumpInput = playerController.Player.Jump;
         shootInput = playerController.Player.Shoot;
@@ -78,7 +79,6 @@ public class PlayerInput : MonoBehaviour
         moveAbility.LookGamePad(mouseVector);
         */
 
-        shootAbility.LookFinal();
 
         
     }

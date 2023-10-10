@@ -10,18 +10,18 @@ public class AmmoScript : MonoBehaviour
     private float speed = 50f;
     private float timeToDestroy = 3f;
 
-    //WHY THE HELL PROPERTIES INSTEAD OF NORMAL VARIABLES?
-    public Vector3 Target { get; set; } //propertys with the Capital first letter
-    public bool Hit { get; set; } //propertys with the Capital first letter
+    public Vector3 Target { get; set; }
+    public bool Hit { get; set; }
 
     private void OnEnable()
     {
-        //bullt destoyed after instantiated the time variable timeToDestoy
+        //bullet destoyed after instantiated the time variable timeToDestoy
         Destroy(gameObject, timeToDestroy);
     }
 
     void Update()
     {
+
         //Bullet direction and speed
         transform.position = Vector3.MoveTowards(transform.position, Target, speed * Time.deltaTime);
 

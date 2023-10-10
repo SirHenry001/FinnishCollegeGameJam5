@@ -42,49 +42,45 @@ public class StateManager : MonoBehaviour
     {
         state = LevelState.FrostMode;
         GameManager.instance.InvokeFrost();
+        Debug.Log("Frost");
 
         timerFrostMode = frostDefault;
         timerChanceForMelt = chanceDefault;
         timerMeltMode = meltDefault;
     }
 
-    public void ChangeState(LevelState state)
+    public void StopCoroutines()
     {
-        switch (state)
-        {
-            case LevelState.FrostMode:
-                
-                GameManager.instance.InvokeMelt();
-                Debug.Log("FROST!");
-                break;
-            case LevelState.MeltMode:
-                state = LevelState.MeltMode;
-                GameManager.instance.InvokeFrost();
-                Debug.Log("MELT"!);
-                break;
-            case LevelState.ChanceForMelt:
-                state = LevelState.ChanceForMelt;
-                GameManager.instance.InvokeChanceToMelt();
-                Debug.Log("CHANCE FOR MELTIN MODE!");
-                break;
-            default:
-                break;
-        }
+        StopAllCoroutines();
     }
 
     private void Update()
     {
         if( state != LevelState.MeltMode)
         {
-            GameManager.instance.InvokeFrost();
-            state = LevelState.FrostMode;
-            timerFrostMode -= Time.deltaTime;
+
+            if (timerFrostMode < frostDefault && timerFrostMode > frostDefault - 0.007f)
+            {
+                GameManager.instance.InvokeFrost();
+                state = LevelState.FrostMode;
+                Debug.Log("Frost");
+            }
+
+
             frostProgress = true;
             chanceProgress = false;
+            timerFrostMode -= Time.deltaTime;
             if (timerFrostMode <= 0)
             {
-                state = LevelState.ChanceForMelt;
-                GameManager.instance.InvokeChanceToMelt();
+
+                if (timerChanceForMelt < chanceDefault && timerChanceForMelt > chanceDefault - 0.007f)
+                {
+                    state = LevelState.ChanceForMelt;
+                    GameManager.instance.InvokeChanceToMelt();
+                    Debug.Log("Chance");
+                }
+
+
                 frostProgress = false;
                 chanceProgress = true;
                 timerFrostMode = 0;
@@ -99,8 +95,14 @@ public class StateManager : MonoBehaviour
         }
         else if(state == LevelState.MeltMode)
         {
-            GameManager.instance.InvokeMelt();
-            state = LevelState.MeltMode;
+
+
+            if (timerMeltMode < meltDefault && timerMeltMode > meltDefault - 0.007f)
+            {
+                GameManager.instance.InvokeMelt();
+                state = LevelState.MeltMode;
+                Debug.Log(LevelState.MeltMode);
+            }
             frostProgress = false;
             chanceProgress = false;
             timerMeltMode -= Time.deltaTime;
@@ -115,11 +117,5 @@ public class StateManager : MonoBehaviour
                 meltProgress = false;
             }
         }
-
-        /*
-        ChangeState(LevelState.FrostMode);
-        ChangeState(LevelState.ChanceForMelt);
-        ChangeState(LevelState.MeltMode);
-        */
     }
 }

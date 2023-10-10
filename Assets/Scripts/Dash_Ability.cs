@@ -7,8 +7,10 @@ public class Dash_Ability : MonoBehaviour
     //PLAYER CORE COMPONENT
     public PlayerCore core;
 
+    public float dashPower;
+
     public void Dash()
     {
-        Debug.Log("Dash");
+        core.rb.AddForce(transform.forward * dashPower, ForceMode.Impulse);
     }
 }
