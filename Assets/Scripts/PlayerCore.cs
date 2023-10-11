@@ -8,12 +8,15 @@ public class PlayerCore : MonoBehaviour
     public Rigidbody rb;
     public Camera mainCamera;
     public Transform cameraTransform;
+    public Animator anim;
 
 
     // BOOLEANS FOR PLAYER STATE
     public bool isGrounded;
     public bool jumpPressed;
+    public bool isDashing;
     public bool shootCoolDown;
+
 
     // Start is called before the first frame update
     void Start()

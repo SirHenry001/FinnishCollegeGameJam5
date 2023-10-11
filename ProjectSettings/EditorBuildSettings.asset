@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestLevels/Henri.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/GameLevels/MainMenu.unity
+    guid: 63a81a8914b7a4d49a0e41c38366d96b
+  - enabled: 1
+    path: Assets/Scenes/TestLevels/FinalLevel.unity
+    guid: 68d5bb4f94e00544fa216c90a8d44446
   m_configObjects: {}

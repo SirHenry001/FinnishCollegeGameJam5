@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Press
   - Bullet
+  - Enemy
+  - EnemyShort
+  - EnemyLong
+  - Lock
   layers:
   - Default
   - TransparentFX
@@ -35,10 +39,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Lock
+  - EnemyAmmo
+  - Weapon
+  - Interact
   m_SortingLayers:
   - name: Default
     uniqueID: 0

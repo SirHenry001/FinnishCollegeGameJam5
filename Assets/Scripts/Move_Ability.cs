@@ -10,18 +10,28 @@ public class Move_Ability : MonoBehaviour
     //MOVEMENT VARIABLES
     public Vector2 mouseVector;
     public float playerSpeed;
+    public float walkingSpeed;
+    public float airSpeed;
+    public float dashSpeed;
     public float rotationSpeed;
 
     //LOOK VARIABLES
     public float sensitivity = 100f;
     private void Update()
     {
-        RotatePlayerTowardsCamera();
+        if(StateManager.instance.levelActive)
+        {
+            RotatePlayerTowardsCamera();
+        }
+
     }
 
     public void Movement(Vector2 value)
     {
         //core.rb.velocity = new Vector3(core.rb.velocity.x, core.rb.velocity.y, core.rb.velocity.z);
+
+        core.anim.SetFloat("x", value.x);
+        core.anim.SetFloat("y", value.y);
 
         if(value.y > 0 || value.y < 0)
         {
@@ -32,6 +42,15 @@ public class Move_Ability : MonoBehaviour
             core.rb.position += transform.right * value.x * Time.deltaTime * playerSpeed;
         }
 
+        if(core.isGrounded)
+        {
+            playerSpeed = walkingSpeed;
+        }
+        else if(core.isGrounded == false)
+        {
+            playerSpeed = airSpeed;
+        }
+
         core.rb.velocity.Normalize();
     }
     public void RotatePlayerTowardsCamera()
@@ -40,15 +59,5 @@ public class Move_Ability : MonoBehaviour
         Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0); // internal variable targetrotation which defines the axis where to rotate based on targetAngle
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime); // Rotate the PLayer between two points and certain rotationSpeed variable
     }
-
-    /*
-    public void LookMouse()
-    {
-        //MOUSE INPUT
-        mouseVector.x += Input.GetAxis("Mouse X");
-        mouseVector.y += Input.GetAxis("Mouse Y");
-        transform.localRotation = Quaternion.Euler(-mouseVector.y, mouseVector.x, 0);
-    }
-    */
 
 }

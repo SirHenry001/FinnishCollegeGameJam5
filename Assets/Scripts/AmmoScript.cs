@@ -7,8 +7,8 @@ public class AmmoScript : MonoBehaviour
     public Rigidbody rb;
     [SerializeField] private GameObject bulletDecal;
 
-    private float speed = 50f;
-    private float timeToDestroy = 3f;
+    public float speed = 50f;
+    public float timeToDestroy = 3f;
 
     public Vector3 Target { get; set; }
     public bool Hit { get; set; }
@@ -34,8 +34,15 @@ public class AmmoScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        ContactPoint contact = collision.GetContact(0); // define variable contact to be first one on where it is contacted
-        GameObject.Instantiate(bulletDecal, contact.point + contact.normal * .0001f, Quaternion.LookRotation(contact.normal));//contact is the point where the bullet hits first, defined later!
+        if(collision.gameObject.tag == "Enemy")
+        {
+            HealthScript hp = collision.gameObject.GetComponentInParent<HealthScript>();
+            //Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            hp.LoseHealth(50);
+
+        }
+        //ContactPoint contact = collision.GetContact(0); // define variable contact to be first one on where it is contacted
+        //GameObject.Instantiate(bulletDecal, contact.point + contact.normal * .0001f, Quaternion.LookRotation(contact.normal));//contact is the point where the bullet hits first, defined later!
         //bullet destoyed on hit
         Destroy(gameObject);
     }
