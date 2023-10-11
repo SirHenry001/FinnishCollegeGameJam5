@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: boss
+  m_Name: icebase
   m_Shader: {fileID: -6465566751694194690, guid: acc125a53d68eb84f80ff4d3d6ae8d21,
     type: 3}
   m_Parent: {fileID: 0}
@@ -135,23 +135,23 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FreznelPower: 0.19
+    - _FreznelPower: -0.07
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _IOR: 1.21
-    - _Metalic: 0.626
+    - _IOR: 0.92
+    - _Metalic: 0.685
     - _Metallic: 0
-    - _Normals: 3
+    - _Normals: 0.53
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RefractionAmount: 0.26
-    - _Smoothness: 0.666
+    - _RefractionAmount: -0.06
+    - _Smoothness: 0.218
     - _SmoothnessTextureChannel: 0
-    - _Snowopacity: 1.08
+    - _Snowopacity: 2
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
@@ -161,15 +161,15 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     - _alpha: 1
-    - _emissive: 0.34
-    - _frostiness: 1.08
+    - _emissive: 0.38
+    - _frostiness: 1.28
     - _frosty: 1.46
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FreznelColor: {r: 0.8160377, g: 0.9504717, b: 1, a: 0}
-    - _ICeColor: {r: 0, g: 0.23503327, b: 1, a: 0}
+    - _ICeColor: {r: 0, g: 4.7925816, b: 6.3754153, a: 0}
     - _IceTiling: {r: 2, g: 2, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _snowDirection: {r: 0, g: 1, b: 0, a: 0}
