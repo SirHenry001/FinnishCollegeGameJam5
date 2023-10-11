@@ -135,12 +135,12 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FreznelPower: 0.64
+    - _FreznelPower: 0.19
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _IOR: 1.41
-    - _Metalic: 0.375
+    - _IOR: 1.21
+    - _Metalic: 0.626
     - _Metallic: 0
     - _Normals: 3
     - _OcclusionStrength: 1
@@ -148,10 +148,10 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _RefractionAmount: 0.78
-    - _Smoothness: 0.613
+    - _RefractionAmount: 0.26
+    - _Smoothness: 0.666
     - _SmoothnessTextureChannel: 0
-    - _Snowopacity: 2
+    - _Snowopacity: 1.08
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
@@ -161,15 +161,15 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     - _alpha: 1
-    - _emissive: 0.37
-    - _frostiness: 1.22
+    - _emissive: 0.34
+    - _frostiness: 1.08
     - _frosty: 1.46
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FreznelColor: {r: 1, g: 1, b: 1, a: 0}
-    - _ICeColor: {r: 0, g: 0.50588226, b: 1, a: 0}
+    - _FreznelColor: {r: 0.8160377, g: 0.9504717, b: 1, a: 0}
+    - _ICeColor: {r: 0, g: 0.23503327, b: 1, a: 0}
     - _IceTiling: {r: 2, g: 2, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _snowDirection: {r: 0, g: 1, b: 0, a: 0}
