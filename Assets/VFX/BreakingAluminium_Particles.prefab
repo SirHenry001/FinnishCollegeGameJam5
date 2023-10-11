@@ -117,8 +117,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: 0.3
+      scalar: 4
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -288,8 +288,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.3
-      minScalar: 0.1
+      scalar: 0.4
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -665,15 +665,15 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 12
+    type: 5
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 80, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Rotation: {x: 90, y: 0, z: 0}
+    m_Scale: {x: 14.927603, y: 14.427582, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -752,9 +752,9 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1.4246497
+      value: 0.0001
       mode: 0
-      spread: 0
+      spread: 1
       speed:
         serializedVersion: 2
         minMaxState: 0
@@ -981,7 +981,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 50
+        scalar: 80
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -4913,14 +4913,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4294932115745559554}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21100953, y: -0, z: -0, w: 0.9774841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5344508915478878764}
   m_Father: {fileID: 5635550318177411216}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &4679750191731458649
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -5552,7 +5552,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 0
+    type: 5
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -5560,7 +5560,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 14.959828, y: 1, z: 15.533743}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -5635,11 +5635,11 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 0
+    randomDirectionAmount: 1
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 4.521857
       mode: 0
       spread: 0
       speed:
@@ -9824,7 +9824,7 @@ ParticleSystem:
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -10063,7 +10063,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.8
+      scalar: 3
       minScalar: 0.5
       maxCurve:
         serializedVersion: 2
@@ -10221,7 +10221,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationX:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -10274,7 +10274,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotationY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 0
       minScalar: 0
       maxCurve:
@@ -10327,8 +10327,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startRotation:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0
+      minMaxState: 3
+      scalar: 6.283185
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -10387,7 +10387,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 2.4
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -10440,7 +10440,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 2
+    type: 5
     angle: 55.276947
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -10448,7 +10448,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 5, y: 1, z: 1}
+    m_Scale: {x: 15, y: 1, z: 14.12997}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -10523,11 +10523,11 @@ ParticleSystem:
     m_TextureColorAffectsParticles: 1
     m_TextureAlphaAffectsParticles: 1
     m_TextureBilinearFiltering: 0
-    randomDirectionAmount: 0
+    randomDirectionAmount: 1
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.18600762
+      value: 0.39100078
       mode: 0
       spread: 0
       speed:
@@ -10586,7 +10586,7 @@ ParticleSystem:
     arc:
       value: 360
       mode: 0
-      spread: 0
+      spread: 1
       speed:
         serializedVersion: 2
         minMaxState: 0
@@ -10756,7 +10756,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 8
+        scalar: 70
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -11142,8 +11142,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
+        key0: {r: 1, g: 1, b: 1, a: 0.6666667}
+        key1: {r: 1, g: 1, b: 1, a: 0.76862746}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -14672,6 +14672,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
+      propertyPath: ShapeModule.type
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
       propertyPath: UVModule.enabled
       value: 0
       objectReference: {fileID: 0}
@@ -14692,13 +14697,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 4.7019024
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 2
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.5
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
+      propertyPath: ShapeModule.randomDirectionAmount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
@@ -14788,11 +14808,6 @@ PrefabInstance:
     - target: {fileID: 3318645557457076192, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3318645557457076192, guid: c484379a87e10eb408fb61aa014dfb39,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4182522951015215592, guid: c484379a87e10eb408fb61aa014dfb39,
@@ -14832,6 +14847,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
+      propertyPath: ShapeModule.type
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
       propertyPath: UVModule.enabled
       value: 0
       objectReference: {fileID: 0}
@@ -14852,13 +14872,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
-      propertyPath: InitialModule.startSize.scalar
+      propertyPath: ShapeModule.radius.value
+      value: 4.551464
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
       propertyPath: InitialModule.startSize.minScalar
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
+        type: 3}
+      propertyPath: ShapeModule.randomDirectionAmount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1473944093063025176, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
@@ -14948,11 +14983,6 @@ PrefabInstance:
     - target: {fileID: 3318645557457076192, guid: c484379a87e10eb408fb61aa014dfb39,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3318645557457076192, guid: c484379a87e10eb408fb61aa014dfb39,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4182522951015215592, guid: c484379a87e10eb408fb61aa014dfb39,
