@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthScript : MonoBehaviour
+public class HealthScriptPlayer : MonoBehaviour
 {
     public int healthAmount = 100;
     public MenuManager menu;
@@ -10,10 +10,10 @@ public class HealthScript : MonoBehaviour
     public void LoseHealth(int value)
     {
         healthAmount -= value;
-        menu.ShowHealthBoss(healthAmount);
-        if(healthAmount <= 0)
+        menu.ShowHealthPlayer(healthAmount);
+        if (healthAmount <= 0)
         {
-            GameManager.instance.InvokeSuccess();
+            GameManager.instance.InvokeLevelFail();
         }
     }
 
@@ -21,5 +21,4 @@ public class HealthScript : MonoBehaviour
     {
         menu = GameObject.Find("MENUMANAGER").GetComponent<MenuManager>();
     }
-
 }

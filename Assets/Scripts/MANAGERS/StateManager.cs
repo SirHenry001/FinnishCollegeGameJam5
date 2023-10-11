@@ -21,6 +21,8 @@ public class StateManager : MonoBehaviour
     public bool meltProgress;
     public bool chanceProgress;
 
+    public bool levelActive;
+
     public static StateManager instance;
 
     public enum LevelState
@@ -32,17 +34,18 @@ public class StateManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null)
-        { Destroy(gameObject); }
-        else
-        { instance = this; DontDestroyOnLoad(instance); }
+        Time.timeScale = 1;
+
+        if (instance != null) { Debug.Log("trying to create another!"); }
+        else { instance = this;  }
+
+
     }
 
     private void Start()
     {
         state = LevelState.FrostMode;
         GameManager.instance.InvokeFrost();
-        Debug.Log("Frost");
 
         timerFrostMode = frostDefault;
         timerChanceForMelt = chanceDefault;
@@ -63,7 +66,6 @@ public class StateManager : MonoBehaviour
             {
                 GameManager.instance.InvokeFrost();
                 state = LevelState.FrostMode;
-                Debug.Log("Frost");
             }
 
 
@@ -77,7 +79,6 @@ public class StateManager : MonoBehaviour
                 {
                     state = LevelState.ChanceForMelt;
                     GameManager.instance.InvokeChanceToMelt();
-                    Debug.Log("Chance");
                 }
 
 
@@ -117,5 +118,10 @@ public class StateManager : MonoBehaviour
                 meltProgress = false;
             }
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.ResetInvokes();
     }
 }

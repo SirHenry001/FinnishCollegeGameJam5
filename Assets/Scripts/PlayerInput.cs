@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     [Header("Input System & Vector")]
     [SerializeField] private PlayerController playerController;
     [SerializeField] private Vector2 moveVector;
+    [SerializeField] private Vector2 dashVector;
     [SerializeField] private Vector2 mouseVector;
 
     [Header("Input Actions")]
@@ -59,6 +60,8 @@ public class PlayerInput : MonoBehaviour
         dashInput.Enable();
     }
 
+
+
     private void OnDisable()
     {
         moveInput.Disable();
@@ -71,35 +74,43 @@ public class PlayerInput : MonoBehaviour
     // LINKS TO ABILITY MOVEMENT
     private void FixedUpdate()
     {
-        moveVector = moveInput.ReadValue<Vector2>();
-        moveAbility.Movement(moveVector);
-
-        /*
-        mouseVector = mouseInput.ReadValue<Vector2>();
-        moveAbility.LookGamePad(mouseVector);
-        */
-
-
-        
+        if(StateManager.instance.levelActive)
+        {
+            moveVector = moveInput.ReadValue<Vector2>();
+            moveAbility.Movement(moveVector);
+        }
     }
     // (BUTTON PRESS) LINKS TO ABILITY FUNCTIONS TO SCRIPTS
     private void DoJump(InputAction.CallbackContext obj)
     {
-        jumpAbility.Jump();
-        core.jumpPressed = true;
+        if (StateManager.instance.levelActive)
+        {
+            jumpAbility.Jump();
+            core.jumpPressed = true;
+        }
     }
     private void DoShoot(InputAction.CallbackContext obj)
     {
-        shootAbility.Shoot();
+        if(StateManager.instance.levelActive)
+        { shootAbility.Shoot(); }
+
     }
     private void DoDash(InputAction.CallbackContext obj)
     {
-        dashAbility.Dash();
+        if (StateManager.instance.levelActive)
+        {
+            dashVector = moveInput.ReadValue<Vector2>();
+            dashAbility.DashDir(dashVector); 
+        }
+
     }
 
     // (BUTTON CANCEL) LINKS TO ABILITY FUNCTIONS TO SCRIPTS
     private void CancelJump(InputAction.CallbackContext obj)
     {
-        core.jumpPressed = false;
+        if (StateManager.instance.levelActive)
+        { core.jumpPressed = false; }
+
     }
+
 }
