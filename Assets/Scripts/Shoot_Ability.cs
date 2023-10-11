@@ -27,6 +27,7 @@ public class Shoot_Ability : MonoBehaviour
 
         if (!core.shootCoolDown)
         {
+            core.anim.SetTrigger("Shoot");
             RaycastHit hit;
             {
                 GameObject bullet = Instantiate(bulletPreFab, shotPoint.transform.position, Quaternion.identity, bulletParent);

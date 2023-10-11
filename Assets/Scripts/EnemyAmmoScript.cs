@@ -10,6 +10,8 @@ public class EnemyAmmoScript : MonoBehaviour
     public GameObject targetToStrike;
     public GameObject FX;
 
+    Vector3 offSet = new Vector3(0, -5, 0);
+
 
     public bool startToTarget;
 
@@ -41,7 +43,7 @@ public class EnemyAmmoScript : MonoBehaviour
         if(startToTarget)
         {
             rb.velocity = Vector3.zero;
-            Vector3 dir = targetToStrike.transform.position - transform.position;
+            Vector3 dir = (targetToStrike.transform.position - offSet)- transform.position;
             dir.Normalize();
             movement = dir;
             Hit(movement);

@@ -42,14 +42,16 @@ public class Move_Ability : MonoBehaviour
             core.rb.position += transform.right * value.x * Time.deltaTime * playerSpeed;
         }
 
-        if(core.isGrounded)
+        if (core.isGrounded)
         {
             playerSpeed = walkingSpeed;
         }
-        else if(core.isGrounded == false)
+        else if (core.isGrounded == false)
         {
             playerSpeed = airSpeed;
         }
+
+
 
         core.rb.velocity.Normalize();
     }

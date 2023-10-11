@@ -159,7 +159,6 @@ GameObject:
   - component: {fileID: 173161033400602637}
   - component: {fileID: 7772078732935043446}
   - component: {fileID: 5882416087147278402}
-  - component: {fileID: 6619886075737056545}
   - component: {fileID: 6113669020450403406}
   m_Layer: 0
   m_Name: PLAYER
@@ -327,20 +326,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   core: {fileID: 1907960128892033227}
   dashPower: 40
---- !u!114 &6619886075737056545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5025630484420515191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5b86e8295f80b446b05b34484c3540a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthAmount: 100
-  menu: {fileID: 0}
 --- !u!114 &6113669020450403406
 MonoBehaviour:
   m_ObjectHideFlags: 0

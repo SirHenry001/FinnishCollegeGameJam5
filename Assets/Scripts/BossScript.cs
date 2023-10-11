@@ -73,10 +73,9 @@ public class BossScript : MonoBehaviour
             AttackLongCheck();
         }
 
-        if (!checkPositionLock)
-        {
-            longAttackCheckObj.transform.position = new Vector3(target.transform.position.x, target.position.y + 10f, target.transform.position.z);
-        }
+        longAttackCheckObj.transform.position = new Vector3(target.transform.position.x, target.position.y + 10f, target.transform.position.z);
+
+
     }
 
     public void AttackLongCheck()
@@ -120,7 +119,6 @@ public class BossScript : MonoBehaviour
         isCountingStatic = isCountingStaticDefault;
         longAttackProgress = false;
         longAttackStart = false;
-        yield return new WaitForSeconds(2f);
         checkPositionLock = false;
     }
     IEnumerator AttackShort()
