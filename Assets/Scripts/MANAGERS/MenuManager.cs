@@ -45,6 +45,11 @@ public class MenuManager : MonoBehaviour
         GameManager.Success += GameWin;
     }
 
+    private void Start()
+    {
+        AudioManager.instance.PlayMusicFX(0);
+    }
+
     public void ChanceState()
     {
         chanceStateText.gameObject.SetActive(true);
@@ -80,12 +85,14 @@ public class MenuManager : MonoBehaviour
         reticle.SetActive(false);
         StateManager.instance.levelActive = false;
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
     public void GameLose()
     {
         loseDisplay.SetActive(true);
         StateManager.instance.levelActive = false;
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
     public void MainMenu()
     {
@@ -98,9 +105,9 @@ public class MenuManager : MonoBehaviour
         StateManager.instance.levelActive = true;
         Time.timeScale = 1;
     }
-    public void MainMenuButton()
+    public void MainMenuButton(int index)
     {
-        SceneManager.LoadScene("FinalLevel");
+        SceneManager.LoadScene(index);
     }
     public void SettingsButton()
     {
