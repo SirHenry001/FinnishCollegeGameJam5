@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 6117966082514659235}
   - component: {fileID: 599621474592742003}
   - component: {fileID: 1736662597425167957}
+  - component: {fileID: 1516484004513222204}
   m_Layer: 27
   m_Name: Character
   m_TagString: Player
@@ -145,6 +146,22 @@ CapsuleCollider:
   m_Direction: 1
   m_Center: {x: 0, y: -0.00000071525574, z: 0}
 --- !u!114 &1736662597425167957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3782526823335231666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6f7815f200e5f4390302e69a692f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: {fileID: 6113669020450403406}
+  menu: {fileID: 0}
+  core: {fileID: 1907960128892033227}
+  FX: {fileID: 3528686945530292684, guid: 1a33b6d8ad580d142a7478839c1c7b41, type: 3}
+--- !u!114 &1516484004513222204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
