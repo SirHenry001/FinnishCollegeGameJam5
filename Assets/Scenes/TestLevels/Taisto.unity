@@ -18188,7 +18188,7 @@ PrefabInstance:
     - target: {fileID: 4989617639059075758, guid: 1248c61c1f0bd954ab55ff998fe6dce0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.47
+      value: 1.88
       objectReference: {fileID: 0}
     - target: {fileID: 4989617639059075758, guid: 1248c61c1f0bd954ab55ff998fe6dce0,
         type: 3}
@@ -18376,6 +18376,74 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fd8f3f2b793fd041a6ea6eb5141526c, type: 3}
+--- !u!1001 &7615751601975437904
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9300003
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -129.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8660259
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.49999917
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 46750610624054423, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859562741444632109, guid: c8fa5be477050d84084b5ec2bda0cdcf,
+        type: 3}
+      propertyPath: m_Name
+      value: IceCreamCone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c8fa5be477050d84084b5ec2bda0cdcf, type: 3}
 --- !u!1001 &8261712185363421154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18542,3 +18610,4 @@ SceneRoots:
   - {fileID: 6518322722628259858}
   - {fileID: 313866861464628167}
   - {fileID: 3117889313493270864}
+  - {fileID: 7615751601975437904}
