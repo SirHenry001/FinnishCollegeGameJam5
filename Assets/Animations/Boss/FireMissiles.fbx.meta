@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5db10f6cb7c68d94d882974a5e70ec6e
+guid: 8c2baab7ddf90c24799b4135e9d6190b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Attack2
+      name: MissileAttack
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 98
+      lastFrame: 129
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -336,13 +336,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Attack2(Clone)
+    - name: Attack4(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: Attack2(Clone)
+      parentName: Attack4(Clone)
       position: {x: 0.0012689393, y: 0.14702746, z: -0.004943335}
       rotation: {x: -0.19201995, y: 0.0062885727, z: -0.047608573, w: 0.98021543}
       scale: {x: 1, y: 1, z: 1}
@@ -514,7 +514,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: mixamorig:Hips
+    rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
