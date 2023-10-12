@@ -821,7 +821,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6567683971523677496}
   - {fileID: 5900293501422491616}
   m_Father: {fileID: 5757931554216256960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1590,12 +1589,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6919520082390555435}
+  m_Father: {fileID: 5757931554216256960}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 69}
-  m_SizeDelta: {x: 335.8705, y: 50}
+  m_AnchoredPosition: {x: 0, y: 36.3}
+  m_SizeDelta: {x: 386.8742, y: 65.203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2940399051177665081
 CanvasRenderer:
@@ -1625,10 +1624,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You melted the boss
+  m_text: You've melted the boss
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 632edd7452d7a134f9b313198cd5e921, type: 2}
+  m_sharedMaterial: {fileID: 3142308860661094878, guid: 632edd7452d7a134f9b313198cd5e921,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1691,7 +1691,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -0.102531396, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &2734295611827230468
@@ -1970,8 +1970,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Main Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 632edd7452d7a134f9b313198cd5e921, type: 2}
+  m_sharedMaterial: {fileID: 3142308860661094878, guid: 632edd7452d7a134f9b313198cd5e921,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2034,7 +2035,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3777628928115513732
@@ -2412,6 +2413,7 @@ MonoBehaviour:
   healthBarBoss: {fileID: 8866051025660738087}
   textBoss: {fileID: 1294013064456416773}
   healthBarPlayer: {fileID: 6933589981177311655}
+  dashBarPlayer: {fileID: 0}
   textPlayer: {fileID: 1911973431836955717}
   allMenus: {fileID: 4900157343925971946}
   reticle: {fileID: 0}
@@ -2923,6 +2925,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8266209327658424644}
+  - {fileID: 6567683971523677496}
   - {fileID: 6919520082390555435}
   m_Father: {fileID: 4589640141275658282}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

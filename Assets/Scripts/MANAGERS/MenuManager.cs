@@ -50,7 +50,7 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.instance.PlayMusicFX(0);
+        AudioManager.instance.PlayMusicFX(1);
     }
 
     public void ChanceState()
@@ -88,7 +88,7 @@ public class MenuManager : MonoBehaviour
 
     public void GameWin()
     {
-        Time.timeScale = 0;
+        AudioManager.instance.PlayMusicFX(2);
         winDisplay.SetActive(true);
         allMenus.SetActive(false);
         reticle.SetActive(false);

@@ -17,6 +17,10 @@ public class PlayerCore : MonoBehaviour
     public bool isDashing;
     public bool shootCoolDown;
 
+    private void Awake()
+    {
+        GameManager.Success += WinAnim;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +28,10 @@ public class PlayerCore : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         mainCamera = FindObjectOfType<Camera>();
         cameraTransform = Camera.main.transform;
+    }
+
+    public void WinAnim()
+    {
+        anim.SetTrigger("WinTrig");
     }
 }

@@ -25,10 +25,11 @@ public class Shoot_Ability : MonoBehaviour
     public void Shoot()
     {
 
-        AudioManager.instance.PlaySoundFX(Random.Range(0,4));
+
 
         if (!core.shootCoolDown)
         {
+            AudioManager.instance.PlaySoundFX(Random.Range(0, 4));
             core.anim.SetTrigger("Shoot");
             core.rb.velocity = Vector3.zero;
             RaycastHit hit;

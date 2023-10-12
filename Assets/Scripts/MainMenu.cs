@@ -9,10 +9,15 @@ public class MainMenu : MonoBehaviour
     public GameObject StartButton;
     public GameObject settingsButton;
     // Start is called before the first frame update
-    
+
+    private void Start()
+    {
+        AudioManager.instance.PlayMusicFX(0);
+    }
 
     public void StartGame(int index)
     {
+        
         StartCoroutine(StartGameDelay(index));
     }
 

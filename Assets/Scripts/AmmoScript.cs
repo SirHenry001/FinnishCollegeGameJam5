@@ -38,7 +38,7 @@ public class AmmoScript : MonoBehaviour
         {
             HealthScript hp = collision.gameObject.GetComponentInParent<HealthScript>();
             Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
-            hp.LoseHealth(1);
+            hp.LoseHealth(5);
 
         }
 
