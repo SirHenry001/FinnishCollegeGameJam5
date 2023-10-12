@@ -126,8 +126,8 @@ TextureImporter:
       name: UI_Elements_0
       rect:
         serializedVersion: 2
-        x: 132
-        y: 6068
+        x: 139
+        y: 7868
         width: 3595
         height: 239
       alignment: 0
@@ -147,12 +147,12 @@ TextureImporter:
       name: UI_Elements_1
       rect:
         serializedVersion: 2
-        x: 193
-        y: 5275
-        width: 3402
+        x: 189
+        y: 7062
+        width: 3404
         height: 596
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47491696, y: 0.5000016}
       border: {x: 1477, y: 0, z: 1627, w: 0}
       outline: []
       physicsShape: []
@@ -168,10 +168,10 @@ TextureImporter:
       name: UI_Elements_2
       rect:
         serializedVersion: 2
-        x: 41
-        y: 3819
-        width: 1126
-        height: 1165
+        x: 38
+        y: 5622
+        width: 1138
+        height: 1170
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,8 +189,8 @@ TextureImporter:
       name: UI_Elements_3
       rect:
         serializedVersion: 2
-        x: 1387
-        y: 4388
+        x: 1371
+        y: 6199
         width: 1222
         height: 410
       alignment: 0
@@ -210,10 +210,10 @@ TextureImporter:
       name: UI_Elements_4
       rect:
         serializedVersion: 2
-        x: 2921
-        y: 3917
-        width: 496
-        height: 1025
+        x: 2918
+        y: 5715
+        width: 500
+        height: 1035
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +232,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 41
-        y: 2415
+        y: 4216
         width: 3781
         height: 1345
       alignment: 0
@@ -253,7 +253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 869
+        y: 2651
         width: 3082
         height: 1214
       alignment: 0
@@ -273,8 +273,8 @@ TextureImporter:
       name: UI_Elements_7
       rect:
         serializedVersion: 2
-        x: 134
-        y: 6363
+        x: 137
+        y: 8159
         width: 3591
         height: 231
       alignment: 0
@@ -294,8 +294,8 @@ TextureImporter:
       name: UI_Elements_8
       rect:
         serializedVersion: 2
-        x: 1519
-        y: 4189
+        x: 1513
+        y: 5993
         width: 173
         height: 169
       alignment: 0
@@ -315,10 +315,10 @@ TextureImporter:
       name: UI_Elements_9
       rect:
         serializedVersion: 2
-        x: 1865
-        y: 4149
+        x: 1858
+        y: 5982
         width: 214
-        height: 233
+        height: 191
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,6 +328,48 @@ TextureImporter:
       bones: []
       spriteID: 4cde01d1c1d450e4cbe436c66e164c7f
       internalID: 366981122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Elements_10
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 936
+        width: 1182
+        height: 1239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8c86048d9103a48a5b7ca5e60f5eb6
+      internalID: -1173566017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Elements_11
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 951
+        width: 1208
+        height: 1209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe1df292d7dd40469b4ba35acc34cf0
+      internalID: 491961588
       vertices: []
       indices: 
       edges: []
@@ -345,6 +387,8 @@ TextureImporter:
     nameFileIdTable:
       UI_Elements_0: -1495870381
       UI_Elements_1: -1627082019
+      UI_Elements_10: -1173566017
+      UI_Elements_11: 491961588
       UI_Elements_2: -1330697986
       UI_Elements_3: -1117034872
       UI_Elements_4: -818650106

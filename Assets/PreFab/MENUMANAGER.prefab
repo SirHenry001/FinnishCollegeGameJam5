@@ -1500,7 +1500,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: the boss
+  m_text: Ikirouta, The Lord of Permafrost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 632edd7452d7a134f9b313198cd5e921, type: 2}
   m_sharedMaterial: {fileID: 3142308860661094878, guid: 632edd7452d7a134f9b313198cd5e921,
@@ -1564,7 +1564,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 23.569561}
+  m_margin: {x: -137.80305, y: 0, z: -137.15613, w: 23.569561}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3474,7 +3474,6 @@ MonoBehaviour:
   textBoss: {fileID: 1294013064456416773}
   healthBarPlayer: {fileID: 6933589981177311655}
   dashBarPlayer: {fileID: 3848221083955539742}
-  textPlayer: {fileID: 0}
   allMenus: {fileID: 4900157343925971946}
   reticle: {fileID: 0}
   currentStateText: {fileID: 6902850835902744870}
@@ -4343,7 +4342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.6277, y: -116}
+  m_AnchoredPosition: {x: 0.6277, y: -88.62301}
   m_SizeDelta: {x: 46.4698, y: 277.246}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2439882988025029557
