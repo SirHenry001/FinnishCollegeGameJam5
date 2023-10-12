@@ -18,6 +18,7 @@ public class StateManager : MonoBehaviour
     public float meltDefault;
 
     public bool frostProgress;
+    public bool meltStart;
     public bool meltProgress;
     public bool chanceProgress;
 
@@ -45,13 +46,27 @@ public class StateManager : MonoBehaviour
     private void Start()
     {
         state = LevelState.FrostMode;
-        GameManager.instance.InvokeFrost();
+        //GameManager.instance.InvokeFrost();
 
         timerFrostMode = frostDefault;
         timerChanceForMelt = chanceDefault;
         timerMeltMode = meltDefault;
+
+        StartCoroutine(StateLoop());
     }
 
+    IEnumerator StateLoop()
+    {
+        while(!meltProgress)
+        {
+            state = LevelState.FrostMode;
+            GameManager.instance.InvokeFrost();
+            yield return new WaitForSecondsRealtime(frostDefault);
+            state = LevelState.ChanceForMelt;
+            GameManager.instance.InvokeChanceToMelt();
+            yield return new WaitForSecondsRealtime(chanceDefault);
+        }
+    }
     public void StopCoroutines()
     {
         StopAllCoroutines();
@@ -59,6 +74,27 @@ public class StateManager : MonoBehaviour
 
     private void Update()
     {
+        if(state == LevelState.MeltMode && !meltProgress)
+        {
+
+            meltProgress = true;
+            StopCoroutines();
+            GameManager.instance.InvokeMelt();
+            meltStart = true;
+        }
+        if(meltStart)
+        {
+            timerMeltMode -= Time.deltaTime;
+            if(timerMeltMode <= 0)
+            {
+                meltStart = false;
+                timerMeltMode = meltDefault;
+                meltProgress = false;
+                StartCoroutine(StateLoop());
+            }
+        }
+
+        /*
         if( state != LevelState.MeltMode)
         {
 
@@ -118,6 +154,7 @@ public class StateManager : MonoBehaviour
                 meltProgress = false;
             }
         }
+        */
     }
 
     private void OnDestroy()

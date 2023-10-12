@@ -38,7 +38,7 @@ public class AmmoScript : MonoBehaviour
         {
             HealthScript hp = collision.gameObject.GetComponentInParent<HealthScript>();
             //Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
-            hp.LoseHealth(50);
+            hp.LoseHealth(1);
 
         }
         //ContactPoint contact = collision.GetContact(0); // define variable contact to be first one on where it is contacted

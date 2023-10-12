@@ -13,7 +13,9 @@ public class MenuManager : MonoBehaviour
 
     [Header("UI PLAYER")]
     public Image healthBarPlayer;
+    public Image dashBarPlayer;
     public TextMeshProUGUI textPlayer;
+
 
     [Header("UI GAME")]
     public GameObject allMenus;
@@ -43,6 +45,7 @@ public class MenuManager : MonoBehaviour
         GameManager.MeltModeActivate += MeltState;
 
         GameManager.Success += GameWin;
+        GameManager.Fail += GameLose;
     }
 
     private void Start()
@@ -77,9 +80,15 @@ public class MenuManager : MonoBehaviour
     {
         healthBarPlayer.fillAmount = value * 0.01f;
     }
+    public void DashBar(float value)
+    {
+        value += dashBarPlayer.fillAmount;
+        dashBarPlayer.fillAmount += value * 0.01f; ;
+    }
 
     public void GameWin()
     {
+        Time.timeScale = 0;
         winDisplay.SetActive(true);
         allMenus.SetActive(false);
         reticle.SetActive(false);
@@ -89,6 +98,7 @@ public class MenuManager : MonoBehaviour
     }
     public void GameLose()
     {
+        Time.timeScale = 0;
         loseDisplay.SetActive(true);
         StateManager.instance.levelActive = false;
         Cursor.visible = true;

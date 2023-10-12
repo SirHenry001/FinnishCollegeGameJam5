@@ -6,12 +6,14 @@ using UnityEngine;
 public class LidScript : MonoBehaviour
 {
     public bool lidOpening;
-    public float speed;
-    public Quaternion target;
+
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        lidOpening = false;
+
         GameManager.ChanceToMelt += OpenLid;
         GameManager.FrostModeActivate += CloseLid;
     }
@@ -22,7 +24,11 @@ public class LidScript : MonoBehaviour
     {
         if(lidOpening)
         {
-            
+            anim.SetBool("Open",true);
+        }
+        else
+        {
+            anim.SetBool("Open", false);
         }
     }
 

@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip[] menuFX;
     public AudioClip[] characterFX;
+    public AudioClip[] movementFX;
     public AudioClip[] soundFX;
     public AudioClip[] musicFX;
 
