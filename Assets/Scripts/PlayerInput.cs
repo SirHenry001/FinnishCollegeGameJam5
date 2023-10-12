@@ -78,7 +78,7 @@ public class PlayerInput : MonoBehaviour
             moveAbility.Movement(moveVector);
         }
 
-        mouseVector = mouseInput.ReadValue<Vector2>() / 10000000f;
+        mouseVector = mouseInput.ReadValue<Vector2>();
     }
     // (BUTTON PRESS) LINKS TO ABILITY FUNCTIONS TO SCRIPTS
     private void DoJump(InputAction.CallbackContext obj)
@@ -109,7 +109,7 @@ public class PlayerInput : MonoBehaviour
     private void CancelJump(InputAction.CallbackContext obj)
     {
         if (StateManager.instance.levelActive)
-        { core.jumpPressed = false; }
+        { core.jumpPressed = false; jumpAbility.AnimActivationOff(); }
 
     }
 

@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 1292365679766457923}
   power: 100
-  speed: 300
+  speed: 200
   targetToStrike: {fileID: 0}
   FX: {fileID: 8749300010330594058, guid: c484379a87e10eb408fb61aa014dfb39, type: 3}
   isStriking: 0

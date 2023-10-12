@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +42,8 @@ public class BossScript : MonoBehaviour
 
     private void Awake()
     {
+        GameManager.Success += DisableBoss;
+
         longAttackCheckObj.GetComponent<Renderer>().enabled = true;
         attackLoopOn = true;
         longAttackIntervalTime = longAttacktimeDefault;
@@ -48,10 +51,19 @@ public class BossScript : MonoBehaviour
         isCountingStatic = isCountingStaticDefault;
     }
 
+    private void DisableBoss()
+    {
+        BossScript boss = gameObject.GetComponent<BossScript>();
+        boss.enabled = false;
+    }
+
     private void Update()
     {
      
         float distToPlayer = Vector3.Distance(transform.position, target.transform.position);
+
+        Debug.Log(distToPlayer);
+
         if (distToPlayer < f2fDist && !shortAttackprogress && longAttackIntervalTime > 0)
         {
             shortAttackprogress = true;

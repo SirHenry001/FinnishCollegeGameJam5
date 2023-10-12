@@ -68,7 +68,7 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
                     ""type"": ""Value"",
                     ""id"": ""b7231394-347a-41c1-9ff0-778e763f9c56"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector2(x=0.2,y=0.2),NormalizeVector2"",
                     ""interactions"": """",
                     ""initialStateCheck"": true
                 },
@@ -297,7 +297,7 @@ public partial class @PlayerController: IInputActionCollection2, IDisposable
                     ""id"": ""c1f7a91b-d0fd-4a62-997e-7fb9b69bf235"",
                     ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""ScaleVector2"",
                     ""groups"": ""Gamepad"",
                     ""action"": ""Look"",
                     ""isComposite"": false,

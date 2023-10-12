@@ -67,9 +67,14 @@ public class Jump_Ability : MonoBehaviour
     {
         if (core.isGrounded == true)
         {
+            core.anim.SetBool("Jump", true);
             core.rb.velocity = Vector2.up * jumpPower;
             //core.rb.AddForce(transform.up * jumpPower);
         }
+    }
+    public void AnimActivationOff()
+    {
+        core.anim.SetBool("Jump", false);
     }
 
 }
