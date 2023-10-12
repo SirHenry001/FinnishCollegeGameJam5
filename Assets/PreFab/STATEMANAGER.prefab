@@ -53,12 +53,14 @@ MonoBehaviour:
   timerFrostMode: 0
   timerChanceForMelt: 0
   timerMeltMode: 0
-  frostDefault: 5
-  chanceDefault: 5
-  meltDefault: 2
+  frostDefault: 60
+  chanceDefault: 10
+  meltDefault: 5
   frostProgress: 0
+  meltStart: 1
   meltProgress: 0
   chanceProgress: 0
+  levelActive: 1
 --- !u!114 &2195242274605128163
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour
     [Header("UI PLAYER")]
     public Image healthBarPlayer;
     public Image dashBarPlayer;
-    public TextMeshProUGUI textPlayer;
+    //public TextMeshProUGUI textPlayer;
 
 
     [Header("UI GAME")]

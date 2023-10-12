@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 9091474367768804739}
-  bulletDecal: {fileID: 666531066326499271, guid: ea29616f90c8d6e4ea12016330ff31b2,
+  bulletDecal: {fileID: 3528686945530292684, guid: 1a33b6d8ad580d142a7478839c1c7b41,
     type: 3}
   speed: 200
   timeToDestroy: 3

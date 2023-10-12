@@ -10,6 +10,7 @@ TagManager:
   - EnemyShort
   - EnemyLong
   - Lock
+  - HP
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Colliders
   - Player
   - Lock
   - EnemyAmmo

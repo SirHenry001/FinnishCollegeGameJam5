@@ -26,7 +26,7 @@ public class BossMelee : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             HealthScriptPlayer hp = collision.gameObject.GetComponent<HealthScriptPlayer>();
-            hp.LoseHealth(5);
+            hp.LoseHealth(10);
 
         }
     }

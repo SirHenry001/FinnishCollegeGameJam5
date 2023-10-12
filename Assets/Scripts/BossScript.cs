@@ -9,6 +9,7 @@ public class BossScript : MonoBehaviour
     public Animator anim;
 
     [Header("GameObject Variables")]
+    public GameObject healthPickUp;
     public GameObject shortAttackWeapon;
     public GameObject longAttackCheckObj;
     public GameObject longAttackWeapon_One;
@@ -17,6 +18,7 @@ public class BossScript : MonoBehaviour
     [Header("GameObject Spawnpoints")]
     public GameObject shortAttackSpawnPos;
     public GameObject[] longAttactSpawnPoint;
+    public GameObject[] pickupSpawn;
 
     [Header("Booleans")]
     public bool attackLoopOn;
@@ -62,7 +64,6 @@ public class BossScript : MonoBehaviour
      
         float distToPlayer = Vector3.Distance(transform.position, target.transform.position);
 
-        Debug.Log(distToPlayer);
 
         if (distToPlayer < f2fDist && !shortAttackprogress && longAttackIntervalTime > 0)
         {
@@ -157,7 +158,12 @@ public class BossScript : MonoBehaviour
         shortAttackprogress = false;
     }
 
-
+    public void SpawnHealthPickUp()
+    {
+        Instantiate(healthPickUp, pickupSpawn[0].transform.position, pickupSpawn[0].transform.rotation);
+        Instantiate(healthPickUp, pickupSpawn[1].transform.position, pickupSpawn[1].transform.rotation);
+        Instantiate(healthPickUp, pickupSpawn[2].transform.position, pickupSpawn[2].transform.rotation);
+    }
 
 
 }

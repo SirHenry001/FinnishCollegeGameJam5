@@ -47,6 +47,7 @@ public class MeltGunAmmo : MonoBehaviour
             HealthScript hp = collision.gameObject.GetComponentInParent<HealthScript>();
             BossScript boss = collision.gameObject.GetComponentInParent<BossScript>();
             boss.anim.SetTrigger("Hitted");
+            boss.SpawnHealthPickUp();
             Instantiate(FX, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             hp.LoseHealth(120);
 

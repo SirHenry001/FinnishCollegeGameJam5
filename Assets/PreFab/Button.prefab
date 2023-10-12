@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 2144478345933501104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -0.069}
-  m_LocalScale: {x: 0.67607117, y: 0.7371596, z: 0.5979498}
+  m_LocalPosition: {x: 0, y: 0.893, z: -0.069}
+  m_LocalScale: {x: 0.67607117, y: 1.4991615, z: 0.5979498}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5783512906423961516}
@@ -239,7 +239,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.08, y: -1.442, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.3133228, y: 2.3133228, z: 2.3133228}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8043385641783524673}
@@ -257,12 +257,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 386df248eb864c443900294519434638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  minPosX: -12
-  maxPosX: 12
-  minPosZ: -10
-  maxPosZ: 10
-  variationTimer: 2
+  anim: {fileID: 2046975591061364173}
+  minPosX: -68
+  maxPosX: 14
+  minPosZ: -120
+  maxPosZ: -60
+  variationTimer: 15
 --- !u!95 &5243259658928379908
 Animator:
   serializedVersion: 5
