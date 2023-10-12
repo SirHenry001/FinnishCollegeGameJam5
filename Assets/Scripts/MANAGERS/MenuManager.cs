@@ -74,7 +74,7 @@ public class MenuManager : MonoBehaviour
 
     public void ShowHealthBoss(int value)
     {
-        healthBarBoss.fillAmount = value * 0.01f;
+        healthBarBoss.fillAmount = value * 0.001f;
     }
     public void ShowHealthPlayer(int value)
     {

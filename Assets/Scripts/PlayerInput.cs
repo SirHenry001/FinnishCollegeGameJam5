@@ -60,8 +60,6 @@ public class PlayerInput : MonoBehaviour
         dashInput.Enable();
     }
 
-
-
     private void OnDisable()
     {
         moveInput.Disable();
@@ -79,6 +77,8 @@ public class PlayerInput : MonoBehaviour
             moveVector = moveInput.ReadValue<Vector2>();
             moveAbility.Movement(moveVector);
         }
+
+        mouseVector = mouseInput.ReadValue<Vector2>() / 10000000f;
     }
     // (BUTTON PRESS) LINKS TO ABILITY FUNCTIONS TO SCRIPTS
     private void DoJump(InputAction.CallbackContext obj)

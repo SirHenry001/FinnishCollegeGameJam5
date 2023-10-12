@@ -28,7 +28,7 @@ public class EnemyAmmoScript : MonoBehaviour
     IEnumerator AmmoFunction()
     {
         rb.AddForce(transform.forward * power, ForceMode.Impulse);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
 
         targetToStrike = GameObject.FindGameObjectWithTag("Lock");
 

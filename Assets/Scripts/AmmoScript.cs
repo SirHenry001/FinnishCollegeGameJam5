@@ -37,10 +37,19 @@ public class AmmoScript : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             HealthScript hp = collision.gameObject.GetComponentInParent<HealthScript>();
-            //Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             hp.LoseHealth(1);
 
         }
+
+        if (collision.gameObject.tag == "EnemyShort")
+        {
+            BossMelee melee = collision.gameObject.GetComponentInParent<BossMelee>();
+            Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            melee.LoseDurability(1);
+
+        }
+
         //ContactPoint contact = collision.GetContact(0); // define variable contact to be first one on where it is contacted
         //GameObject.Instantiate(bulletDecal, contact.point + contact.normal * .0001f, Quaternion.LookRotation(contact.normal));//contact is the point where the bullet hits first, defined later!
         //bullet destoyed on hit

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossScript : MonoBehaviour
 {
     public Transform target;
+    public Animator anim;
 
     [Header("GameObject Variables")]
     public GameObject shortAttackWeapon;
@@ -54,20 +55,23 @@ public class BossScript : MonoBehaviour
         if (distToPlayer < f2fDist && !shortAttackprogress && longAttackIntervalTime > 0)
         {
             shortAttackprogress = true;
+            anim.SetBool("MeleeBegin", true);
             StartCoroutine(AttackShort());
         }
 
-        if(!longAttackProgress)
+        if(!longAttackProgress || !shortAttackprogress)
         {
             longAttackCheckObj.GetComponent<Renderer>().enabled = false;
             longAttackIntervalTime -= Time.deltaTime;
         }
 
+
         if (longAttackIntervalTime <= 0)
         {
-            longAttackCheckObj.GetComponent<Renderer>().enabled = true;
+            longAttackCheckObj.GetComponent<Renderer>().enabled = false;
             longAttackIntervalTime = 0;
             longAttackProgress = true;
+            //anim.SetBool("AttackBegin",true);
             AttackLongCheck();
         }
 
@@ -75,9 +79,6 @@ public class BossScript : MonoBehaviour
         {
             longAttackCheckObj.transform.position = new Vector3(target.transform.position.x, target.position.y + 10f, target.transform.position.z);
         }
-
-
-
     }
 
     public void AttackLongCheck()
@@ -108,13 +109,18 @@ public class BossScript : MonoBehaviour
 
     IEnumerator LongAttack()
     {
-        longAttackCheckObj.GetComponent<Renderer>().enabled = true;
-        //Hyökkäys tähän
+        longAttackCheckObj.GetComponent<Renderer>().enabled = false;
+        anim.SetBool("LongBegin",true);
+
         Instantiate(longAttackWeapon_One, longAttactSpawnPoint[0].transform.position, longAttactSpawnPoint[0].transform.rotation);
         Instantiate(longAttackWeapon_One, longAttactSpawnPoint[1].transform.position, longAttactSpawnPoint[1].transform.rotation);
         Instantiate(longAttackWeapon_One, longAttactSpawnPoint[2].transform.position, longAttactSpawnPoint[2].transform.rotation);
 
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(1.5f);
+        anim.SetBool("LongStart", true);
+        yield return new WaitForSeconds(2f);
+        anim.SetBool("LongBegin", false);
+        anim.SetBool("LongStart", false);
         checkPositionLock = true;
         longAttackIntervalTime = longAttacktimeDefault;
         isCounting = isCountingDefault;
@@ -128,10 +134,14 @@ public class BossScript : MonoBehaviour
     {
 
         yield return new WaitForSeconds(2f);
+        anim.SetBool("MeleeBegin", false);
 
         Instantiate(shortAttackWeapon, shortAttackSpawnPos.transform.position, shortAttackSpawnPos.transform.rotation);
-        yield return new WaitForSeconds(5f);
 
+        yield return new WaitForSeconds(2.5f);
+        anim.SetBool("MeleeStart", true);
+        yield return new WaitForSeconds(0.5f);
+        anim.SetBool("MeleeStart", false);
         shortAttackprogress = false;
     }
 

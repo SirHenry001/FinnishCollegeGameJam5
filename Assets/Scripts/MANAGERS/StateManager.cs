@@ -59,9 +59,11 @@ public class StateManager : MonoBehaviour
     {
         while(!meltProgress)
         {
+            Debug.Log("Frost");
             state = LevelState.FrostMode;
             GameManager.instance.InvokeFrost();
             yield return new WaitForSecondsRealtime(frostDefault);
+            Debug.Log("CHANGE");
             state = LevelState.ChanceForMelt;
             GameManager.instance.InvokeChanceToMelt();
             yield return new WaitForSecondsRealtime(chanceDefault);

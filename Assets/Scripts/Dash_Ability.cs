@@ -72,9 +72,6 @@ public class Dash_Ability : MonoBehaviour
                 menu.dashBarPlayer.fillAmount = 0;
             }
         }
-
-
-
     }
 
     IEnumerator DashCoolDown()

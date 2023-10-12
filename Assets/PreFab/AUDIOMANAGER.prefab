@@ -179,6 +179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuFX: []
   characterFX: []
+  movementFX: []
   soundFX: []
   musicFX: []
   menuFXSource: {fileID: 0}

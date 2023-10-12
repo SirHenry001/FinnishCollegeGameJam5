@@ -20,6 +20,7 @@ public class Jump_Ability : MonoBehaviour
 
     //LAYERMASK VARIABLES
     public LayerMask groundMask;
+    public LayerMask interactMask;
 
     private void Update()
     {
@@ -53,19 +54,21 @@ public class Jump_Ability : MonoBehaviour
         {
             core.rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
         }
+        /*
         // IF JUMP BUTTON IS RELEASED DURING JUMP, PLAYER FALL DOWN FASTER AND GET SMALLER JUMP
         else if (y > 0 && !core.jumpPressed)
         {
             core.rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
         }
+        */
 
     }
     public void Jump()
     {
         if (core.isGrounded == true)
         {
-            //rb.velocity = Vector2.up * jumpPower;
-            core.rb.AddForce(transform.up * jumpPower);
+            core.rb.velocity = Vector2.up * jumpPower;
+            //core.rb.AddForce(transform.up * jumpPower);
         }
     }
 

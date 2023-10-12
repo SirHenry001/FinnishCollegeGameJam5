@@ -25,6 +25,8 @@ public class Shoot_Ability : MonoBehaviour
     public void Shoot()
     {
 
+        AudioManager.instance.PlaySoundFX(Random.Range(0,4));
+
         if (!core.shootCoolDown)
         {
             core.anim.SetTrigger("Shoot");

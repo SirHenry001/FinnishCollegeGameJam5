@@ -14,7 +14,6 @@ public class HealthScript : MonoBehaviour
         if(healthAmount <= 0)
         {
             GameManager.instance.InvokeSuccess();
-            Debug.Log("VOITTO?");
         }
     }
 
