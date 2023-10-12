@@ -135,7 +135,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FreznelPower: -0.07
+    - _FreznelPower: -0.48
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -168,7 +168,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FreznelColor: {r: 0.8160377, g: 0.9504717, b: 1, a: 0}
+    - _FreznelColor: {r: 0.0046724807, g: 0.15529054, b: 0.1981132, a: 0}
     - _ICeColor: {r: 0, g: 4.7925816, b: 6.3754153, a: 0}
     - _IceTiling: {r: 2, g: 2, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
