@@ -6,6 +6,8 @@ public class ButtonScript : MonoBehaviour
 {
 
     public Animator anim;
+    public GameObject FX;
+    public GameObject fxPos;
 
     public float minPosX;
     public float maxPosX;
@@ -22,6 +24,8 @@ public class ButtonScript : MonoBehaviour
     public void LocationVariation()
     {
         gameObject.transform.position = new Vector3((Random.Range(minPosX, maxPosX)), transform.position.y, (Random.Range(minPosZ, maxPosZ)));
+        GameObject clone = Instantiate(FX, fxPos.gameObject.transform.position, fxPos.gameObject.transform.rotation);
+        Destroy(clone,1.5f);
     }
     public void StartDelay()
     {
@@ -33,6 +37,7 @@ public class ButtonScript : MonoBehaviour
     {
         anim.SetBool("Press", true);
         yield return new WaitForSecondsRealtime(0.2f);
+
         anim.SetBool("Press", false);
     }
 

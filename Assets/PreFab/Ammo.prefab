@@ -105,6 +105,7 @@ MonoBehaviour:
   rb: {fileID: 9091474367768804739}
   bulletDecal: {fileID: 3528686945530292684, guid: 1a33b6d8ad580d142a7478839c1c7b41,
     type: 3}
+  spawnPos: {fileID: 0}
   speed: 200
   timeToDestroy: 3
 --- !u!54 &9091474367768804739
