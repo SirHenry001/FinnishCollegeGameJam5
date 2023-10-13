@@ -79,6 +79,7 @@ public class PlayerInput : MonoBehaviour
         }
 
         mouseVector = mouseInput.ReadValue<Vector2>();
+
     }
     // (BUTTON PRESS) LINKS TO ABILITY FUNCTIONS TO SCRIPTS
     private void DoJump(InputAction.CallbackContext obj)
