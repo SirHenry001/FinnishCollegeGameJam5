@@ -6,7 +6,6 @@ public class HealthScript : MonoBehaviour
 {
     public int healthAmount = 1000;
     public MenuManager menu;
-    public GameObject player;
 
     public void LoseHealth(int value)
     {
@@ -14,7 +13,6 @@ public class HealthScript : MonoBehaviour
         menu.ShowHealthBoss(healthAmount);
         if(healthAmount <= 0)
         {
-            player.gameObject.tag = "Untagged";
             healthAmount = 0;
             GameManager.instance.InvokeSuccess();
         }
