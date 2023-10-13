@@ -8,6 +8,7 @@ public class ButtonScript : MonoBehaviour
     public Animator anim;
     public GameObject FX;
     public GameObject fxPos;
+    public Collider pressCol;
 
     public float minPosX;
     public float maxPosX;
@@ -18,7 +19,19 @@ public class ButtonScript : MonoBehaviour
 
     private void Awake()
     {
+        GameManager.MeltModeActivate += ColliderControl;
         InvokeRepeating("LocationVariation", 0f, variationTimer);
+    }
+
+    private void ColliderControl()
+    {
+        StartCoroutine(Collider());
+    }
+    IEnumerator Collider()
+    {
+        pressCol.enabled = false;
+        yield return new WaitForSecondsRealtime(StateManager.instance.meltDefault);
+        pressCol.enabled = true;
     }
 
     public void LocationVariation()
@@ -37,7 +50,6 @@ public class ButtonScript : MonoBehaviour
     {
         anim.SetBool("Press", true);
         yield return new WaitForSecondsRealtime(0.2f);
-
         anim.SetBool("Press", false);
     }
 

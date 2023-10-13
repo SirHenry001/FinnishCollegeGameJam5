@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     public void InvokeFrost()
     { FrostModeActivate?.Invoke();}
     public void InvokeMelt()
-    { MeltModeActivate?.Invoke();}
+    { MeltModeActivate?.Invoke(); }
     public void InvokeChanceToMelt()
     { ChanceToMelt?.Invoke();}
 

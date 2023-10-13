@@ -6,6 +6,8 @@ public class PickUpScript : MonoBehaviour
 {
     public Rigidbody rb;
 
+    public float appearTime;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
@@ -28,7 +30,7 @@ public class PickUpScript : MonoBehaviour
     private void Start()
     {
         rb.AddForce(transform.forward * 500f);
-        Destroy(gameObject, 20f);
+        Destroy(gameObject, appearTime);
     }
 
 }

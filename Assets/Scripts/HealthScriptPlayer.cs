@@ -37,7 +37,6 @@ public class HealthScriptPlayer : MonoBehaviour
             endTimer -= Time.deltaTime;
             if(endTimer <= 0)
             {
-                Debug.Log("Peli loppu");
                 endTimer = 0.7f;
                 GameManager.instance.InvokeLevelFail();
             }
