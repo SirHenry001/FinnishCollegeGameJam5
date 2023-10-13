@@ -57,6 +57,7 @@ public class StateManager : MonoBehaviour
 
     IEnumerator StateLoop()
     {
+        Debug.Log("coroutine alkaa");
         while(!meltProgress)
         {
             state = LevelState.FrostMode;
@@ -78,7 +79,7 @@ public class StateManager : MonoBehaviour
         {
 
             meltProgress = true;
-            StopCoroutines();
+            StopAllCoroutines();
             GameManager.instance.InvokeMelt();
             meltStart = true;
         }

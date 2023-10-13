@@ -255,7 +255,7 @@ public class DialogueSystem : MonoBehaviour
     {
         if (buttonHasBeenPressed == false)
         {
-            Debug.Log("AUKI EKAN KERRAN");
+
             if (boxHasBeenOpened == false)
             {
                 buttonHasBeenPressed = true;
@@ -266,7 +266,7 @@ public class DialogueSystem : MonoBehaviour
         }
         else if(buttonHasBeenPressed == true)
         {
-            Debug.Log("KERRAN JO AUKAISTU");
+
             startNewDialogue(12);
         }
     }
