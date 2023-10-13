@@ -49,7 +49,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void Awake()
     {
-        GameManager.MeltModeActivate += startSunDamageTutorial;
+        GameManager.ChanceToMelt += startSunDamageTutorial;
         GameManager.Success += startEndingDialogue;
         GameManager.Fail += startDeathDialogue;
     }
