@@ -5,7 +5,8 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Windows;
+//using UnityEngine.Windows;
+
 
 public class DialogueSystem : MonoBehaviour
 {
@@ -57,6 +58,12 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       /* if (Input.GetKeyDown("space"))
+        {
+            Debug.Log("space key was pressed");
+            playWizardLotion();
+        }*/
+
         if (dialogueIsShowing == false) { nextDialogTimer += Time.deltaTime; }
         if (nextDialogTimer >= 20f) {
             randomizeNextDialogue();
@@ -105,6 +112,7 @@ public class DialogueSystem : MonoBehaviour
         dialogueCasePartNum = 0;
         dialogueIsShowing = true;
         dialogCaseNum = dialogCaseNumber;
+        pausingForNextLine = false;
         initializeDialogueLine(speakerPortraits[dialogCaseNumber], dialogueAudioFiles[dialogCaseNumber], dialogueStrings[dialogCaseNumber], dialogueShowTimes[dialogCaseNumber], nextDialogLineTimes[dialogCaseNumber]);
         dialogueBackground.SetActive(true);
     }
