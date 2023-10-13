@@ -1230,7 +1230,7 @@ Transform:
   m_GameObject: {fileID: 321977912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1086.826, y: 2.4178085, z: 95.60174}
+  m_LocalPosition: {x: 1078.0259, y: 2.4178085, z: 95.601746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2229,6 +2229,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1679727963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &502065834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8913579423235174285, guid: 3899fbd2de212f44b8de41b8cbe65a44,
+    type: 3}
+  m_PrefabInstance: {fileID: 635054481}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &525585810
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,6 +2722,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3224359223112770209, guid: 3899fbd2de212f44b8de41b8cbe65a44,
+        type: 3}
+      propertyPath: fxPos
+      value: 
+      objectReference: {fileID: 502065834}
     - target: {fileID: 6371231990609992415, guid: 3899fbd2de212f44b8de41b8cbe65a44,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2804,7 +2815,7 @@ Transform:
   m_GameObject: {fileID: 682297390}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1092.7521, y: 5.078987, z: 94.02174}
+  m_LocalPosition: {x: 1079.7083, y: 5.078987, z: 94.02174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3044,7 +3055,7 @@ Transform:
   m_GameObject: {fileID: 689030764}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1086.826, y: 2.4178085, z: 95.60174}
+  m_LocalPosition: {x: 1079.7083, y: 5.078987, z: 94.02174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3169,7 +3180,7 @@ Camera:
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
-  field of view: 48.32
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -5404,6 +5415,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1218910788}
     m_Modifications:
+    - target: {fileID: 1395934303107216843, guid: 82decaa865403db4c9414b3e29721d15,
+        type: 3}
+      propertyPath: fx
+      value: 
+      objectReference: {fileID: 6568237971370135076, guid: 4e427026bb37a3d4094afb96f6d53089,
+        type: 3}
     - target: {fileID: 4557539414547191088, guid: 82decaa865403db4c9414b3e29721d15,
         type: 3}
       propertyPath: m_LocalPosition.x
