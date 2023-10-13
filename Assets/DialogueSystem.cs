@@ -47,6 +47,12 @@ public class DialogueSystem : MonoBehaviour
     
         public float dialogueDelayBeforeNextLine = 0f;
 
+    private void Awake()
+    {
+        GameManager.MeltModeActivate += startSunDamageTutorial;
+        GameManager.Success += startEndingDialogue;
+        GameManager.Fail += startDeathDialogue;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -226,6 +232,7 @@ public class DialogueSystem : MonoBehaviour
         startNewDialogue(5);
     }
 
+    /*
     public void startSunDamageTutorial()
     {
         if (buttonHasBeenPressed == false)
@@ -239,6 +246,27 @@ public class DialogueSystem : MonoBehaviour
             {
                 startNewDialogue(12);
             }
+        }
+    }
+    */
+
+    public void startSunDamageTutorial()
+    {
+        if (buttonHasBeenPressed == false)
+        {
+            Debug.Log("AUKI EKAN KERRAN");
+            if (boxHasBeenOpened == false)
+            {
+                buttonHasBeenPressed = true;
+                startNewDialogue(10);
+                boxHasBeenOpened = true;
+            }
+
+        }
+        else if(buttonHasBeenPressed == true)
+        {
+            Debug.Log("KERRAN JO AUKAISTU");
+            startNewDialogue(12);
         }
     }
 }

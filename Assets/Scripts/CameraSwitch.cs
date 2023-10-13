@@ -19,14 +19,14 @@ public class CameraSwitch : MonoBehaviour
 
     public void PlayCam()
     {
-        playCam.Priority += 10;
-        staticCam.Priority -= 10;
+        playCam.Priority = 10;
+        staticCam.Priority = 9;
 
     }
     public void StaticCam()
     {
-        playCam.Priority -= 10;
-        staticCam.Priority += 10;
+        playCam.Priority = 9;
+        staticCam.Priority = 10;
 
     }
 

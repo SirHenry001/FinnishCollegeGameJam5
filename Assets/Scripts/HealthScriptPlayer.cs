@@ -6,6 +6,10 @@ public class HealthScriptPlayer : MonoBehaviour
 {
     public int healthAmount = 100;
     public MenuManager menu;
+    public GameObject player;
+
+    public bool gameEnd;
+    public float endTimer = 0.2f;
 
     public void LoseHealth(int value)
     {
@@ -13,12 +17,31 @@ public class HealthScriptPlayer : MonoBehaviour
         menu.ShowHealthPlayer(healthAmount);
         if (healthAmount <= 0)
         {
-            GameManager.instance.InvokeLevelFail();
+            healthAmount = 0;
+            gameEnd = true;
         }
     }
+
+
 
     private void Start()
     {
         menu = GameObject.Find("MENUMANAGER").GetComponent<MenuManager>();
     }
+
+    private void Update()
+    {
+        if(gameEnd)
+        {
+            if(endTimer < 0.6f)
+            endTimer -= Time.deltaTime;
+            if(endTimer <= 0)
+            {
+                Debug.Log("Peli loppu");
+                endTimer = 0.7f;
+                GameManager.instance.InvokeLevelFail();
+            }
+        }
+    }
+
 }

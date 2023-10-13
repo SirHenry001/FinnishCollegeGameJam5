@@ -7,7 +7,7 @@ public class PlayerCollider : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Press")
+        if (other.gameObject.tag == "Press" && StateManager.instance.state != StateManager.LevelState.ChanceForMelt)
         {
             Debug.Log("Osun");
             other.gameObject.GetComponentInParent<ButtonScript>().StartDelay();
