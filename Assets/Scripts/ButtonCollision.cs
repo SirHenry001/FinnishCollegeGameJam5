@@ -8,7 +8,7 @@ public class ButtonCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("Osun Nappiin");
+            
         }
     }
 }

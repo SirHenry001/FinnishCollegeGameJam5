@@ -16,6 +16,7 @@ public class ButtonScript : MonoBehaviour
     public float maxPosZ;
 
     public float variationTimer;
+    public GameObject spawnPos;
 
     private void Awake()
     {
