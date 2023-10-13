@@ -20,6 +20,7 @@ public class PlayerCore : MonoBehaviour
     private void Awake()
     {
         GameManager.Success += WinAnim;
+        GameManager.Fail += LoseAnim;
     }
 
     // Start is called before the first frame update
@@ -33,5 +34,9 @@ public class PlayerCore : MonoBehaviour
     public void WinAnim()
     {
         anim.SetTrigger("WinTrig");
+    }
+    public void LoseAnim()
+    {
+        anim.SetTrigger("LoseTrig");
     }
 }

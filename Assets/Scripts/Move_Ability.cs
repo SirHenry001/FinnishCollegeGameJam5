@@ -58,6 +58,13 @@ public class Move_Ability : MonoBehaviour
             playerSpeed = airSpeed;
         }
 
+        if(StateManager.instance.levelActive == false)
+        {
+            value.x = 0;
+            value.y = 0;
+            core.rb.velocity = Vector3.zero;
+        }
+
 
 
         core.rb.velocity.Normalize();

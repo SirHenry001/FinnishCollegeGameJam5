@@ -23,7 +23,7 @@ public class MeltGun : MonoBehaviour
 
     IEnumerator End()
     {
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(StateManager.instance.meltDefault);
         gameObject.SetActive(false);
     }
 }

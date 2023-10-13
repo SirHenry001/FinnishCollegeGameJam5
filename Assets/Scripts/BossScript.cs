@@ -45,6 +45,7 @@ public class BossScript : MonoBehaviour
     private void Awake()
     {
         GameManager.Success += DisableBoss;
+        GameManager.Fail += DisableBoss;
 
         longAttackCheckObj.GetComponent<Renderer>().enabled = true;
         attackLoopOn = true;

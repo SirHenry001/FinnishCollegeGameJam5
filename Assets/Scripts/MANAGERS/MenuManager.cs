@@ -104,8 +104,10 @@ public class MenuManager : MonoBehaviour
     }
     public void GameLose()
     {
-        Time.timeScale = 0;
+        AudioManager.instance.PlayMusicFX(2);
         loseDisplay.SetActive(true);
+        allMenus.SetActive(false);
+        reticle.SetActive(false);
         StateManager.instance.levelActive = false;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
