@@ -6,13 +6,17 @@ public class PickUpScript : MonoBehaviour
 {
     public Rigidbody rb;
 
+    public GameObject fx;
+    public GameObject spawnPos;
+
     public float appearTime;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Health pick Up");
+            GameObject clone = Instantiate(fx, spawnPos.transform.position, spawnPos.transform.rotation);
+            Destroy(clone, 3.5f);
             HealthScriptPlayer hp = other.gameObject.GetComponentInParent<HealthScriptPlayer>();
             hp.healthAmount += 25;
             
