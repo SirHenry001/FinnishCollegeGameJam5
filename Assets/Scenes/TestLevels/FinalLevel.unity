@@ -1317,7 +1317,7 @@ PrefabInstance:
     - target: {fileID: 2242267218259861184, guid: dd9fb107989ca3943918a9fd1d84affa,
         type: 3}
       propertyPath: meltStart
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2242267218259861184, guid: dd9fb107989ca3943918a9fd1d84affa,
         type: 3}
@@ -1332,7 +1332,7 @@ PrefabInstance:
     - target: {fileID: 2242267218259861184, guid: dd9fb107989ca3943918a9fd1d84affa,
         type: 3}
       propertyPath: frostDefault
-      value: 60
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2242267218259861184, guid: dd9fb107989ca3943918a9fd1d84affa,
         type: 3}

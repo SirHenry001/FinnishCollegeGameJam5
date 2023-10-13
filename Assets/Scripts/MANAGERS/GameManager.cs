@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     public void InvokeMelt()
     { MeltModeActivate?.Invoke(); }
     public void InvokeChanceToMelt()
-    { ChanceToMelt?.Invoke();}
+    { ChanceToMelt?.Invoke(); }
 
     public void ResetInvokes() // k‰ytet‰‰n t‰ss‰ functiossa kun ladataan scene uudestaan esim menness‰ retryyn tai muuten navigointi
     {
