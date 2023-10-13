@@ -70,6 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4235754217666351156}
+  appearTime: 8
 --- !u!65 &5877954738550613948
 BoxCollider:
   m_ObjectHideFlags: 0
