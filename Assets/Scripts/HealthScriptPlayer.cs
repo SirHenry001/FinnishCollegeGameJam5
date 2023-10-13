@@ -11,7 +11,7 @@ public class HealthScriptPlayer : MonoBehaviour
     public bool gameEnd;
     public float endTimer = 0.2f;
 
-    //public bool debugImmortal;
+    public bool debugImmortal;         // NÄÄ POIS LOPULLISEEN
 
     public void LoseHealth(int value)
     {
@@ -43,9 +43,9 @@ public class HealthScriptPlayer : MonoBehaviour
                 GameManager.instance.InvokeLevelFail();
             }
         }
-        
 
-        /*
+
+        // NÄÄ POIS LOPULLISEEN
         if (Input.GetKeyDown(KeyCode.K))
         {
             if(!debugImmortal)
@@ -65,7 +65,7 @@ public class HealthScriptPlayer : MonoBehaviour
             //Debug.Log("kuolematon");
             healthAmount = 100;
         }
-        */
+        
     }
 
 

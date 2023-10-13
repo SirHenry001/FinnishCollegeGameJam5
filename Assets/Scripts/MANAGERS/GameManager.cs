@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static event GameAction Fail;
 
     public delegate void LevelAction();
+    public static event LevelAction MajoActivate;
     public static event LevelAction ChanceToMelt;
     public static event LevelAction FrostModeActivate;
     public static event LevelAction MeltModeActivate;
@@ -30,6 +31,8 @@ public class GameManager : MonoBehaviour
     { Fail?.Invoke(); }
 
     //INVOKE LEVEL EVENTS FUNCTIONS
+    public void InvokeMajo()
+    { MajoActivate?.Invoke(); }
     public void InvokeFrost()
     { FrostModeActivate?.Invoke();}
     public void InvokeMelt()
@@ -41,6 +44,7 @@ public class GameManager : MonoBehaviour
     {
         Success = null;
         Fail = null;
+        MajoActivate = null;
         ChanceToMelt = null;
         FrostModeActivate = null;
         MeltModeActivate = null;
