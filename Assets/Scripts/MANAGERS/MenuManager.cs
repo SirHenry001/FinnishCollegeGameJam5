@@ -51,6 +51,7 @@ public class MenuManager : MonoBehaviour
     private void Start()
     {
         AudioManager.instance.PlayMusicFX(1);
+        StateManager.instance.levelActive = true;
     }
 
     public void ChanceState()
@@ -122,6 +123,10 @@ public class MenuManager : MonoBehaviour
     public void SettingsButton()
     {
 
+    }
+    private void OnDestroy()
+    {
+        GameManager.instance.ResetInvokes();
     }
 
 }

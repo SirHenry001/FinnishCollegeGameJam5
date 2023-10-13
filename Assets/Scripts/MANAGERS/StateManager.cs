@@ -38,7 +38,7 @@ public class StateManager : MonoBehaviour
         Time.timeScale = 1;
 
         if (instance != null) { Debug.Log("trying to create another!"); }
-        else { instance = this;  }
+        else { instance = this; DontDestroyOnLoad(instance); }
 
 
     }
@@ -59,11 +59,9 @@ public class StateManager : MonoBehaviour
     {
         while(!meltProgress)
         {
-            Debug.Log("Frost");
             state = LevelState.FrostMode;
             GameManager.instance.InvokeFrost();
             yield return new WaitForSecondsRealtime(frostDefault);
-            Debug.Log("CHANGE");
             state = LevelState.ChanceForMelt;
             GameManager.instance.InvokeChanceToMelt();
             yield return new WaitForSecondsRealtime(chanceDefault);
@@ -159,8 +157,4 @@ public class StateManager : MonoBehaviour
         */
     }
 
-    private void OnDestroy()
-    {
-        GameManager.instance.ResetInvokes();
-    }
 }

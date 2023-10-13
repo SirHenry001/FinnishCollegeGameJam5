@@ -26,6 +26,7 @@ public class MainMenu : MonoBehaviour
         //‰‰ni
         yield return new WaitForSecondsRealtime(1f);
         SceneManager.LoadScene(index);
+        StateManager.instance.levelActive = true;
     }
 
     public void Quit()

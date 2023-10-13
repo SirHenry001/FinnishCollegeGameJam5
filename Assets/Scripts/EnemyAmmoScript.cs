@@ -64,13 +64,12 @@ public class EnemyAmmoScript : MonoBehaviour
             hp.LoseHealth(5);
             Instantiate(FX, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             Destroy(gameObject);
-
         }
+
         if (collision.gameObject.tag == "Lock")
         {
             Instantiate(FX, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             Destroy(gameObject);
-
         }
 
 
