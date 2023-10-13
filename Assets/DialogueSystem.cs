@@ -147,7 +147,7 @@ public class DialogueSystem : MonoBehaviour
         dialogueShowTime = displayTime;
         dialogueTextObject.GetComponent<TextMeshProUGUI>().text = dialogueString;
 
-        audioSource.PlayOneShot(dialogueAudioFile, 0.7f);
+        audioSource.PlayOneShot(dialogueAudioFile, 1f);
 
     }
 
