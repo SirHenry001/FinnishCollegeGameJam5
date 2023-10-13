@@ -1314,8 +1314,8 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 1}
-        key2: {r: 0, g: 0, b: 0, a: 1}
+        key1: {r: 1, g: 1, b: 1, a: 0.9490196}
+        key2: {r: 0, g: 0, b: 0, a: 0.69803923}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -1344,8 +1344,8 @@ ParticleSystem:
       minGradient:
         serializedVersion: 2
         key0: {r: 0.9685534, g: 0.99967927, b: 1, a: 0}
-        key1: {r: 0.95911944, g: 1, b: 0.99959207, a: 1}
-        key2: {r: 0, g: 0, b: 0, a: 1}
+        key1: {r: 0.95911944, g: 1, b: 0.99959207, a: 0.81960785}
+        key2: {r: 0, g: 0, b: 0, a: 0.9137255}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -20723,7 +20723,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 0}
-        key1: {r: 1, g: 1, b: 1, a: 0.15294118}
+        key1: {r: 1, g: 1, b: 1, a: 0.30588236}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -24191,7 +24191,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 21a09ebc3483dc44fa91dff4430e7292, type: 2}
+  - {fileID: 2100000, guid: 3e6df88f9dad73c4f963d0af1c67d7b5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
