@@ -14,6 +14,7 @@ public class MenuManager : MonoBehaviour
     [Header("UI PLAYER")]
     public Image healthBarPlayer;
     public Image dashBarPlayer;
+    public Image meltLogo;
     //public TextMeshProUGUI textPlayer;
 
 
@@ -56,18 +57,21 @@ public class MenuManager : MonoBehaviour
 
     public void ChanceState()
     {
+        meltLogo.gameObject.SetActive(false);
         chanceStateText.gameObject.SetActive(true);
         frostStateText.gameObject.SetActive(false);
         meltStateText.gameObject.SetActive(false);
     }
     public void FrostState()
     {
+        meltLogo.gameObject.SetActive(false);
         chanceStateText.gameObject.SetActive(false);
         frostStateText.gameObject.SetActive(true);
         meltStateText.gameObject.SetActive(false);
     }
     public void MeltState()
     {
+        meltLogo.gameObject.SetActive(true);
         chanceStateText.gameObject.SetActive(false);
         frostStateText.gameObject.SetActive(false);
         meltStateText.gameObject.SetActive(true);
