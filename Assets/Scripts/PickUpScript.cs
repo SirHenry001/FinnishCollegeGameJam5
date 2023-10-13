@@ -13,6 +13,12 @@ public class PickUpScript : MonoBehaviour
             Debug.Log("Health pick Up");
             HealthScriptPlayer hp = other.gameObject.GetComponentInParent<HealthScriptPlayer>();
             hp.healthAmount += 25;
+            
+            if(hp.healthAmount >= 100)
+            {
+                hp.healthAmount = 100;
+            }
+            
             MenuManager menu = GameObject.Find("MENUMANAGER").GetComponent<MenuManager>();
             menu.healthBarPlayer.fillAmount = hp.healthAmount;
             Destroy(gameObject);
