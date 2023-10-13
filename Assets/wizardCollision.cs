@@ -15,4 +15,12 @@ public class wizardCollision : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+    /*    if (other.CompareTag("Player"))
+        {
+            Invoke("InvokeMajo", 2f);
+        }*/
+    }
 }
