@@ -6,6 +6,7 @@ public class AmmoScript : MonoBehaviour
 {
     public Rigidbody rb;
     [SerializeField] private GameObject bulletDecal;
+    public GameObject spawnPos;
 
     public float speed = 50f;
     public float timeToDestroy = 3f;
@@ -37,7 +38,8 @@ public class AmmoScript : MonoBehaviour
         if(collision.gameObject.tag == "Enemy")
         {
             HealthScript hp = collision.gameObject.GetComponentInParent<HealthScript>();
-            Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            GameObject clone = Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            Destroy(clone,1.5f);
             hp.LoseHealth(5);
 
         }
@@ -45,7 +47,8 @@ public class AmmoScript : MonoBehaviour
         if (collision.gameObject.tag == "EnemyShort")
         {
             BossMelee melee = collision.gameObject.GetComponentInParent<BossMelee>();
-            Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            GameObject clone = Instantiate(bulletDecal, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            Destroy(clone, 1.5f);
             melee.LoseDurability(1);
 
         }

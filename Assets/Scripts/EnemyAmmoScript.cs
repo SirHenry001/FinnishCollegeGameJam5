@@ -62,13 +62,16 @@ public class EnemyAmmoScript : MonoBehaviour
             HealthScriptPlayer hp = collision.gameObject.GetComponent<HealthScriptPlayer>();
 
             hp.LoseHealth(5);
-            Instantiate(FX, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            GameObject clone = Instantiate(FX, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            Destroy(clone, 1.5f);
             Destroy(gameObject);
+
         }
 
         if (collision.gameObject.tag == "Lock")
         {
-            Instantiate(FX, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            GameObject clone = Instantiate(FX, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            Destroy(clone, 1.5f);
             Destroy(gameObject);
         }
 

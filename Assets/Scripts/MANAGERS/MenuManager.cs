@@ -41,6 +41,7 @@ public class MenuManager : MonoBehaviour
     private void Awake()
     {
         Cursor.visible = true;
+        reticle.SetActive(true);
         GameManager.ChanceToMelt += ChanceState;
         GameManager.FrostModeActivate += FrostState;
         GameManager.MeltModeActivate += MeltState;
